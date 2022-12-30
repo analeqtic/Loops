@@ -14,7 +14,7 @@ namespace loops
             
             Console.WriteLine("Press enter to roll the die.");
             
- 
+  
             while(roll1 != roll2)
             {
                 Console.ReadKey();
