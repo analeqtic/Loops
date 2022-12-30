@@ -8,17 +8,20 @@ namespace loops
         {
             Random numberGen = new Random();
 
-            int roll = 0;
+            int roll1 = 1;
+            int roll2 = 0;
             int attempts = 0;
             
             Console.WriteLine("Press enter to roll the die.");
             
 
-            while(roll != 6)
+            while(roll1 != roll2)
             {
                 Console.ReadKey();
-                roll = numberGen.Next(1, 7);
-                Console.WriteLine("You rolled: " + roll);
+                roll1 = numberGen.Next(1, 7);
+                roll2 = numberGen.Next(1, 7);
+                Console.WriteLine("You rolled: " + roll1);
+                Console.WriteLine("You rolled: " + roll2);
                 attempts++;           
             }
 
